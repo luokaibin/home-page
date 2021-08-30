@@ -128,6 +128,17 @@
     <script>
       window.onload = function () {
         document.body.classList.remove("is-preload");
+        if(location.host.includes('kaibinluo.com')) {
+          document.querySelector('#footer .copyright a').textContent = '陕ICP备17013245号-3'
+        }
+        if(location.host.includes('jiabanmoyu.com')) {
+          document.querySelector('#footer .copyright a').textContent = '陕ICP备17013245号-2'
+        }
+        if(location.host.includes('jindll.com')) {
+          document.querySelector('#footer .copyright a').textContent = '陕ICP备17013245号-1'
+        }if(location.host.includes('cyansg.cn')) {
+          document.querySelector('#footer .copyright a').textContent = '陕ICP备17013245号-1'
+        }
       };
       window.ontouchmove = function () {
         return false;
