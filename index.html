@@ -20,7 +20,7 @@
       <div id="main">
         <!-- Header -->
         <header id="header">
-          <h1>胖大人本胖</h1>
+          <h1 class="title">胖大人本胖</h1>
           <p id="jinrishici-sentence">每天都是最好的自己</p>
           <nav>
             <ul>
@@ -117,7 +117,7 @@
         <!-- Footer -->
         <footer id="footer">
           <span class="copyright"
-            >&copy; 2021 胖大人本胖丨<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow"
+            >&copy; 2021~2024 <span class="title">胖大人本胖</span>丨<a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow"
               >陕ICP备17013245号</a
             ></span
           >
@@ -129,9 +129,15 @@
       window.onload = function () {
         document.body.classList.remove("is-preload");
         if(location.host.includes('kaibinluo.com')) {
-          document.querySelector('#footer .copyright a').textContent = '陕ICP备17013245号-3'
+          document.title="胖大人日常记事";
+          document.querySelector('#header .title').textContent = '胖大人日常记事';
+          document.querySelector('#footer .copyright .title').textContent = '胖大人日常记事';
+          document.querySelector('#footer .copyright').textContent = '陕ICP备17013245号-3'
         }
         if(location.host.includes('jiabanmoyu.com')) {
+          document.title="加班摸鱼";
+          document.querySelector('#header .title').textContent = '加班摸鱼';
+          document.querySelector('#footer .copyright .title').textContent = '加班摸鱼';
           document.querySelector('#footer .copyright a').textContent = '陕ICP备17013245号-2'
         }
         if(location.host.includes('jindll.com')) {
